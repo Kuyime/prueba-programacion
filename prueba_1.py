@@ -11,8 +11,7 @@ def menu():
             elif eleccion ==3:
                 alumno_eliminado = input("Escribe el nombre del alumno a eliminar: ").lower()
                 if alumno_eliminado.isalpha():
-                    for i in lista_alumnos:
-                        if i == alumno_eliminado:
+                        if alumno_eliminado in lista_alumnos:
                             lista_alumnos.remove(alumno_eliminado)
                             print(f"Eliminando a {alumno_eliminado} de la lista.")
                         else:
