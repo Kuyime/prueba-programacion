@@ -14,6 +14,7 @@ def menu():
                     for i in lista_alumnos:
                         if i == alumno_eliminado:
                             lista_alumnos.remove(alumno_eliminado)
+                            print(f"Eliminando a {alumno_eliminado} de la lista.")
                         else:
                             print(f"No hay un alumno llamado {alumno_eliminado} en la lista.")
                 else:
